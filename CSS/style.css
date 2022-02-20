@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    /* overflow-wrap: break-word; */
+}
+
+
+
+:root {
+    --h1: #130f49;
+    --blue: #34a1cd;
+    --dark-purple: #55527c;
+    --grey: #d6d6d6;
+    --pink: #ea4c89;
+    --circle: #f4f3ff;
+}
+
+/* Meni */
+.meni-link {
+    font-size: 16px;
+    
+}
+
+
+/* O meni */
+.o-meni {
+    margin-left: 50%;
+}
+
+/* Usluge */
+
+
+
+
+
+
+
+/* O meni -desna sekcija - postavke ikonica programskih jezika */
+
+.slika-thumbnail img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    max-width: 80px;
+    max-height: 80px;
+    
+    
+}
+
+.slika-thumbnail img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    max-width: 80px;
+    max-height: 80px;
+    transition: 0.5s;
+    transform: scale(1.1);
+    
+    
+}
+
+.progres-traka {
+    animation: progres-animacija;
+    animation-duration: 1s;
+}
+
+.animacija {
+    animation: badge-anim;
+    animation-duration: 2s;
+}
+
+/* Kontakt forma */
+
+.linija {
+
+    width: 80%;
+    height: 3px;
+    color: #55527c;
+}
+
+/* Strelica za vrh */
+
+.strelica {
+    width: 2rem;
+    height: 2rem;
+    font-size: 25px;
+}
+
+/* Media Querry */
+
+
+@media (max-width: 576px) {
+     
+    /* O meni h2 naslov */
+
+    .o-meni {
+        transform: translateX(-50%);
+       
+    }
+    /* O meni desna sekcija slike centriranje mobilna verzija */
+   
+
+
+    .slika-thumbnail img  {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer;
+        max-width: 80px;
+        max-height: 80px;
+        
+              
+    }
+
+    /* Usluge naslov centriranje */
+    .usluge {
+        transform: translateX(-50%);
+    }
+
+    /* Portfolio naslov centriranje */
+    .portfolio {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+ /* Animacije */
+
+
+/* Animacija progres trake */
+ @keyframes progres-animacija {
+
+    
+     from {
+         transform: scaleX(0);
+         transform-origin: left;
+     }
+     to {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+ }
+
+ /* Animacija progress badge */
+
+ @keyframes badge-anim {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1.0;
+    }
+ }
